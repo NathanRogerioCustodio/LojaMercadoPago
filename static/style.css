@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    color: orange;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+nav a {
+    color: orange;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.product-card {
+    background-color: #222;
+    border: 1px solid orange;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+.buy-button {
+    background-color: orange;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}

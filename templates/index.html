@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Loja - Página Inicial</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('produtos_page') }}">Produtos</a>
+    </nav>
+    <h1>Bem-vindo à Loja</h1>
+    <p>Explore nossos produtos e aproveite as ofertas!</p>
+</body>
+</html>

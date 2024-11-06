@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('produtos_page') }}">Produtos</a>
+    </nav>
+    <h1>Nossos Produtos</h1>
+    <div class="product-list">
+        {% for produto in produtos %}
+        <div class="product-card">
+            <h2>{{ produto.nome }}</h2>
+            <p>Preço: R$ {{ produto.preco }}</p>
+            <a href="{{ url_for('comprar', produto_id=produto.id) }}" class="buy-button">Comprar</a>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
